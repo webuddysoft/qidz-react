@@ -46,10 +46,10 @@ class Categories extends Component {
                                             (category, i) => (
                                                 <div key={i + 1} className="category-link">
                                                     <a href={`search/?parentcategory=${category.id}`}>                                                       
-                                                        <span class="cat_text_main">
-                                                            <span class="cat_text"> {category.name}
+                                                        <span className="cat_text_main">
+                                                            <span className="cat_text"> {category.name}
                                                             </span>
-                                                            <span class="cat_icons">
+                                                            <span className="cat_icons">
                                                             </span>
                                                         </span>
                                                     </a>

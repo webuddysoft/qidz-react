@@ -2,6 +2,8 @@ import React from 'react';
 import _ from 'lodash';
 import ModalService from './modal.service';
 import ButtonComponent from '../button/button.component';
+import * as $ from "jquery";
+
 // import TextInputExtendedComponent from '../inputs/text-input-extended/text-input-extended.component';
 
 const DEFAULT_OPTIONS = {

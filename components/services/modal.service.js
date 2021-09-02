@@ -2,6 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ModalBaseComponent from './modal-base.component';
+import * as $ from "jquery";
 
 class ModalService {
 	constructor() {

@@ -3,6 +3,7 @@ import config from '../config'
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
 import moment from 'moment/moment'
+import searchIcon from "../assets/images/search_ic.png";
 
 class Search extends React.Component {
   constructor (props) {
@@ -96,6 +97,7 @@ class Search extends React.Component {
     }
   }
   rangeBetween (start, end) {
+    let resarrult = [];
     if (start > end) {
       var arr = new Array(start - end + 1)
       for (var i = 0; i < arr.length; i++, start--) {
@@ -195,8 +197,7 @@ class Search extends React.Component {
               <div className='row'>
                 <div className='col-md-12 serah_form_field'>
                   <img
-                    className='search_filed_ic'
-                    src='/wp-content/themes/wpreactqidz/assets/images/search_ic.png'
+                    className='search_filed_ic' src={searchIcon}
                   />
                   <input
                     type='text'
@@ -235,22 +236,22 @@ class Search extends React.Component {
                       className='form-control'
                       onChange={e => this.onchangeDay(e)}
                     >
-                      <option value='DEFAULT'>
+                      <option value='DEFAULT' key={1}>
                         {languageId === config.lang
                           ? staticLanguage.form.when
                           : 'When'}
                       </option>
-                      <option value='today'>
+                      <option value='today' key={2}>
                         {languageId === config.lang
                           ? staticLanguage.home.today
                           : 'Today'}
                       </option>
-                      <option value='tomorrow'>
+                      <option value='tomorrow' key={3}>
                         {languageId === config.lang
                           ? staticLanguage.home.tomorrow
                           : 'Tomorrow'}
                       </option>
-                      <option value='this_weekend'>
+                      <option value='this_weekend' key={4}>
                         {languageId === config.lang
                           ? staticLanguage.home.this_weekend
                           : 'This Weekend'}
@@ -294,37 +295,39 @@ class Search extends React.Component {
                   </div>
                 </div>
                 <div className='col-md-5'>
-                  <div class='form-group date_main'>
-                    <div class='input-group date col-md-6'>
+                  <div className='form-group date_main'>
+                    <div className='input-group date col-md-6'>
                       <select
-                        class='form-control'
+                        className='form-control'
                         onChange={e => this.onchangeAgeFrom(e)}
+                        defaultValue={'DEFAULT'}
                       >
-                        <option value='DEFAULT' selected=''>
+                        <option value='DEFAULT' key={0}>
                           {languageId === config.lang
                             ? staticLanguage.common.from_age
                             : 'Age From'}
                         </option>
                         {this.state.ages.map(age => (
-                          <option value={age}>{age}</option>
+                          <option value={age} key={age}>{age}</option>
                         ))}
                       </select>
                       <span className='errorMessage alert alert-danger'>
                         {this.state.ageFromErrorMessage}
                       </span>
                     </div>
-                    <div class='input-group date col-md-6'>
+                    <div className='input-group date col-md-6'>
                       <select
-                        class='form-control'
+                        className='form-control'
                         onChange={e => this.onchangeAgeTo(e)}
+                        defaultValue={'DEFAULT'}
                       >
-                        <option value='DEFAULT' selected=''>
+                        <option value='DEFAULT' key={0}>
                           {languageId === config.lang
                             ? staticLanguage.common.to_age
                             : 'Age To'}
                         </option>
                         {this.state.ages.map(age => (
-                          <option value={age}>{age}</option>
+                          <option value={age} key={age}>{age}</option>
                         ))}
                       </select>
                     </div>

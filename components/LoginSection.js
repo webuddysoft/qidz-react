@@ -68,19 +68,19 @@ class LoginSection extends Component {
     
     return (
       <>
-        <div class='login_section'>
+        <div className='login_section'>
           {token === null || token === undefined ? (
-            <a href onClick={() => this.showModal('login')}>
+            <a href="#" onClick={() => this.showModal('login')}>
               {languageId === config.lang
                 ? staticLanguage.login.login
                 : 'Login'}
             </a>
           ) : (
             // <a href="javascript:void(0)" onClick={() => this.Logout()}>Logout</a>
-            <div class='dropdown user_menu'>
+            <div className='dropdown user_menu'>
               <a
-                class='dropdown-toggle'
-                href={languageId=='en'?'/user-profile/':'/ar/user-profile/'}
+                className='dropdown-toggle'
+                href={ languageId=='en' ? '/user-profile/':'/ar/user-profile/'}
                 id='dropdownMenu1'
                 data-toggle='dropdown'
                 aria-haspopup='true'
@@ -88,20 +88,20 @@ class LoginSection extends Component {
               >
                 {localStorage.getItem('name')}
               </a>
-              <div class='dropdown-menu' aria-labelledby='dropdownMenu1'>
-                <a class='dropdown-item' href={languageId=='en'?'/user-profile/':'/ar/user-profile/'}>
+              <div className='dropdown-menu' aria-labelledby='dropdownMenu1'>
+                <a className='dropdown-item' href={languageId=='en'?'/user-profile/':'/ar/user-profile/'}>
                   {' '}
                   {languageId === config.lang
                     ? staticLanguage.common.my_profile
                     : 'My Profile'}
                 </a>
-                <a class='dropdown-item' href={languageId=='en'?'/my-booking/':'/ar/my-booking/'}>
+                <a className='dropdown-item' href={languageId=='en'?'/my-booking/':'/ar/my-booking/'}>
                   {' '}
                   {languageId === config.lang
                     ? staticLanguage.common.my_profile
                     : 'My Bookings'}
                 </a>
-                <a class='dropdown-item' href onClick={() => this.Logout()}>
+                <a className='dropdown-item' href="#" onClick={() => this.Logout()}>
                   {' '}
                   {languageId === config.lang
                     ? staticLanguage.profile.logout_title
@@ -112,7 +112,7 @@ class LoginSection extends Component {
           )}
           {token === null || token === undefined ? ' / ' : ''}
           {token === null || token === undefined ? (
-            <a href onClick={() => this.showModal('register')}>
+            <a href="#" onClick={() => this.showModal('register')}>
               {languageId === config.lang
                 ? staticLanguage.register.register
                 : 'Register'}

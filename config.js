@@ -2,12 +2,12 @@
 const url = window.location.protocol;
 
 let apiRootLang ='';
-const apiRoot = "https://qidz.mangoitsol.com/wp-json/qidz/v1";
+const apiRoot = "http://lc.qidzproject.com/wp-json/qidz/v1";
 if(url==='http:'){
-	apiRootLang = "http://qidz.mangoitsol.com/wp-content/themes/wpreactqidz/qidz-ar.json";	
+	apiRootLang = "qidz-ar.json";	
 }
 if(url==='https:'){
-	apiRootLang = "https://qidz.mangoitsol.com/wp-content/themes/wpreactqidz/qidz-ar.json";
+	apiRootLang = "qidz-ar.json";
 }
 
 const setResourceHost = () => {

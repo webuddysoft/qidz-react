@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import config from '../config'
+import applePng from "../assets/images/apple.png";
+import googlePng from "../assets/images/google.png";
 
 class DownloadSection extends Component {
   constructor (props) {
@@ -18,18 +20,18 @@ class DownloadSection extends Component {
     const { staticLanguage } = this.state
     return (
       <>
-        <div class='top-header-left col-md-6'>
-          <div class='download_label'>{languageId === config.lang
+        <div className='top-header-left col-md-6'>
+          <div className='download_label'>{languageId === config.lang
                           ? staticLanguage.common.download_now
                           : 'DOWNLOAD NOW'}</div>
-          <div class='app_btn'>
+          <div className='app_btn'>
             <a href={config.appStoreUrl} target='_blank'>
-              <img src='/wp-content/themes/wpreactqidz/assets/images/apple.png' />
+              <img src={applePng} />
             </a>
           </div>
-          <div class='app_btn'>
+          <div className='app_btn'>
             <a href={config.googlePlayUrl} target='_blank'>
-              <img src='/wp-content/themes/wpreactqidz/assets/images/google.png' />
+              <img src={googlePng} />
             </a>
           </div>
         </div>

@@ -1,8 +1,8 @@
-@import '../assets/css/search_results.css';
-@import '../assets/css/event_listing.css';
-@import '../assets/css/event_booking.css';
-@import "../assets/css/_modal-base.css";
-@import "../assets/css/flag.css";
+@import './assets/css/search_results.css';
+@import './assets/css/event_listing.css';
+@import './assets/css/event_booking.css';
+@import "./assets/css/_modal-base.css";
+@import "./assets/css/flag.css";
 /*.App {
   text-align: center;
 }
@@ -56,66 +56,66 @@
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Segoe UI';
-  src: url('../assets/fonts/SegoeUI-Light.eot');
-  src: local('../assets/fonts/Segoe UI Light'), local('SegoeUI-Light'),
-    url('../assets/fonts/SegoeUI-Light.eot?#iefix') format('embedded-opentype'),
-    url('../assets/fonts/SegoeUI-Light.woff') format('woff'),
-    url('../assets/fonts/SegoeUI-Light.ttf') format('truetype');
+  src: url('./assets/fonts/SegoeUI-Light.eot');
+  src: local('./assets/fonts/Segoe UI Light'), local('SegoeUI-Light'),
+    url('./assets/fonts/SegoeUI-Light.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/SegoeUI-Light.woff') format('woff'),
+    url('./assets/fonts/SegoeUI-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Segoe UI';
-  src: url('../assets/fonts/SegoeUI-BoldItalic.eot');
-  src: local('../assets/fonts/Segoe UI Bold Italic'), local('SegoeUI-BoldItalic'),
-    url('../assets/fonts/SegoeUI-BoldItalic.eot?#iefix') format('embedded-opentype'),
-    url('../assets/fonts/SegoeUI-BoldItalic.woff') format('woff'),
-    url('../assets/fonts/SegoeUI-BoldItalic.ttf') format('truetype');
+  src: url('./assets/fonts/SegoeUI-BoldItalic.eot');
+  src: local('./assets/fonts/Segoe UI Bold Italic'), local('SegoeUI-BoldItalic'),
+    url('./assets/fonts/SegoeUI-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/SegoeUI-BoldItalic.woff') format('woff'),
+    url('./assets/fonts/SegoeUI-BoldItalic.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Segoe UI';
-  src: url('../assets/fonts/SegoeUI-SemiBold.eot');
-  src: local('../assets/fonts/Segoe UI Semibold'), local('SegoeUI-SemiBold'),
-    url('../assets/fonts/SegoeUI-SemiBold.eot?#iefix') format('embedded-opentype'),
-    url('../assets/fonts/SegoeUI-SemiBold.woff') format('woff'),
-    url('../assets/fonts/SegoeUI-SemiBold.ttf') format('truetype');
+  src: url('./assets/fonts/SegoeUI-SemiBold.eot');
+  src: local('./assets/fonts/Segoe UI Semibold'), local('SegoeUI-SemiBold'),
+    url('./assets/fonts/SegoeUI-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/SegoeUI-SemiBold.woff') format('woff'),
+    url('./assets/fonts/SegoeUI-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Segoe UI';
-  src: url('../assets/fonts/SegoeUI.eot');
-  src: local('../assets/fonts/Segoe UI'), local('SegoeUI'),
-    url('../assets/fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
-    url('../assets/fonts/SegoeUI.woff') format('woff'),
-    url('../assets/fonts/SegoeUI.ttf') format('truetype');
+  src: url('./assets/fonts/SegoeUI.eot');
+  src: local('./assets/fonts/Segoe UI'), local('SegoeUI'),
+    url('./assets/fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/SegoeUI.woff') format('woff'),
+    url('./assets/fonts/SegoeUI.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Segoe UI';
-  src: url('../assets/fonts/SegoeUI-Bold.eot');
-  src: local('../assets/fonts/Segoe UI Bold'), local('SegoeUI-Bold'),
-    url('../assets/fonts/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../assets/fonts/SegoeUI-Bold.woff') format('woff'),
-    url('../assets/fonts/SegoeUI-Bold.ttf') format('truetype');
+  src: url('./assets/fonts/SegoeUI-Bold.eot');
+  src: local('./assets/fonts/Segoe UI Bold'), local('SegoeUI-Bold'),
+    url('./assets/fonts/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/SegoeUI-Bold.woff') format('woff'),
+    url('./assets/fonts/SegoeUI-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Segoe UI';
-  src: url('../assets/fonts/SegoeUI-Italic.eot');
-  src: local('../assets/fonts/Segoe UI Italic'), local('SegoeUI-Italic'),
-    url('../assets/fonts/SegoeUI-Italic.eot?#iefix') format('embedded-opentype'),
-    url('../assets/fonts/SegoeUI-Italic.woff') format('woff'),
-    url('../assets/fonts/SegoeUI-Italic.ttf') format('truetype');
+  src: url('./assets/fonts/SegoeUI-Italic.eot');
+  src: local('./assets/fonts/Segoe UI Italic'), local('SegoeUI-Italic'),
+    url('./assets/fonts/SegoeUI-Italic.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/SegoeUI-Italic.woff') format('woff'),
+    url('./assets/fonts/SegoeUI-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
@@ -868,7 +868,7 @@ input#formGroupExampleInput {
 
 .hf_inner select {
   width: 100% !important;
-  background: url(../assets/img/category-widget/caret_ic.png) no-repeat 95% #fff;
+  background: url(./assets/images/category-widget/caret_ic.png) no-repeat 95% #fff;
   -webkit-appearance: none;
   padding-right: 10px;
   margin-bottom: 0px;
@@ -887,7 +887,7 @@ input#formGroupExampleInput {
 
 .hf_inner input.search_field:before {
   padding-left: 54px;
-  background-image: url(../assets/img/category-widget/search_ic.png);
+  background-image: url(./assets/images/category-widget/search_ic.png);
   background-repeat: no-repeat;
   background-position: 18px;
   margin-bottom: 0px;
@@ -1441,7 +1441,7 @@ p.tfree-testimonial-content:before {
   content: '';
   position: absolute;
   top: 0px;
-  background: url(../assets/images/open_quote.png) no-repeat;
+  background: url(./assets/images/open_quote.png) no-repeat;
   height: 53px;
   width: 49px;
   left: 0;
@@ -1452,7 +1452,7 @@ p.tfree-testimonial-content:after {
   content: '';
   position: absolute;
   bottom: 38px;
-  background: url(../assets/images/close_quote.png) no-repeat;
+  background: url(./assets/images/close_quote.png) no-repeat;
   height: 53px;
   width: 49px;
   right: 0;
@@ -2404,7 +2404,7 @@ span.blog_cat {
 }
 
 .trp-language-switcher>div {
-  /*background: url(../../assets/img/category-widget/caret_ic.png) no-repeat 95% #fff;*/
+  /*background: url(.././assets/images/category-widget/caret_ic.png) no-repeat 95% #fff;*/
 }
 
 .language_field .trp-ls-shortcode-current-language a {
@@ -3490,7 +3490,7 @@ div#activity_rm {
 .read_more_content a:before {
   content: '';
   position: absolute;
-  background: url(../assets/img/event-dt/read_ic.png) no-repeat;
+  background: url(./assets/images/event-dt/read_ic.png) no-repeat;
   width: 16px;
   height: 20px;
   left: 15px;
@@ -3551,7 +3551,7 @@ span.dis_sub_text {
   width: 18px;
   height: 18px;
   left: 0;
-  background: url(../assets/img/event-dt/watch_ic.png) no-repeat;
+  background: url(./assets/images/event-dt/watch_ic.png) no-repeat;
   margin-top: 6px;
 }
 
@@ -3618,7 +3618,7 @@ span.main_price {
 .widget_first h3:before {
   content: '';
   position: absolute;
-  background: url(../assets/img/event-dt/act_ic.png) no-repeat;
+  background: url(./assets/images/event-dt/act_ic.png) no-repeat;
   width: 30px;
   height: 30px;
   left: 0;
@@ -3628,7 +3628,7 @@ span.main_price {
 .widget_second h3:before {
   content: '';
   position: absolute;
-  background: url(../assets/img/event-dt/review_ic.png) no-repeat;
+  background: url(./assets/images/event-dt/review_ic.png) no-repeat;
   width: 30px;
   height: 30px;
   left: -2px;
@@ -3638,7 +3638,7 @@ span.main_price {
 .widget_third h3:before {
   content: '';
   position: absolute;
-  background: url(../assets/img/event-dt/review_ic.png) no-repeat;
+  background: url(./assets/images/event-dt/review_ic.png) no-repeat;
   width: 30px;
   height: 30px;
   left: -2px;
@@ -3648,7 +3648,7 @@ span.main_price {
 .widget_third.sche_icons h3:before {
   content: '';
   position: absolute;
-  background: url(../assets/img/event-dt/sc_cal_ic_01.png) no-repeat;
+  background: url(./assets/images/event-dt/sc_cal_ic_01.png) no-repeat;
   width: 30px;
   height: 30px;
   left: -2px;
@@ -3745,7 +3745,7 @@ span.validate_msg {
   color: #333;
   font-weight: 600;
   font-size: 17px;
-  background-image: url(../assets/img/event-dt/camera_ic.png);
+  background-image: url(./assets/images/event-dt/camera_ic.png);
   background-repeat: no-repeat;
   background-position: 8px 11px;
   margin-top: -43px;
@@ -3858,7 +3858,7 @@ button.btn.edit_profile_btn.btn_custom{
 }
 
 .widget_heading.widget_head_blue h3:after {
-  background: url(../assets/img/event-dt/widget_border_blue.png) no-repeat;
+  background: url(./assets/images/event-dt/widget_border_blue.png) no-repeat;
   right: -47px;
   width: 50px;
   height: 41px;
@@ -3868,7 +3868,7 @@ button.btn.edit_profile_btn.btn_custom{
 }
 
 .widget_heading.widget_head_red h3:after {
-  background: url(../assets/img/event-dt/widget_border.png) no-repeat;
+  background: url(./assets/images/event-dt/widget_border.png) no-repeat;
   right: -47px;
   width: 50px;
   height: 41px;
@@ -3935,7 +3935,7 @@ button.btn.edit_profile_btn.btn_custom{
 
 .rel_details a:before {
   content: '';
-  background: url(../assets/img/event-dt/loc_ic.png) no-repeat;
+  background: url(./assets/images/event-dt/loc_ic.png) no-repeat;
   width: 13px;
   height: 26px;
   position: absolute;
@@ -4330,7 +4330,7 @@ button#edit {
 }
 
 .date_picker .react-datepicker__input-container:after {
-  background: url(../assets/img/category-widget/date_cal.png) no-repeat;
+  background: url(./assets/images/category-widget/date_cal.png) no-repeat;
   position: absolute;
   content: '';
   width: 46px;
@@ -4859,7 +4859,7 @@ li.react-multi-carousel-dot button {
 
 .eve_age.tags:before {
   content: '';
-  background: url(../assets/img/user_tag_ic.png) no-repeat;
+  background: url(./assets/images/user_tag_ic.png) no-repeat;
   width: 18px;
   height: 18px;
   position: absolute;
@@ -4875,7 +4875,7 @@ li.react-multi-carousel-dot button {
 
 .eve_tag.tags:before {
   content: '';
-  background: url(../assets/img/tag_ic.png) no-repeat;
+  background: url(./assets/images/tag_ic.png) no-repeat;
   width: 14px;
   height: 14px;
   position: absolute;
@@ -5459,7 +5459,7 @@ button.btn.near_me {
     border-radius: 5px !important;
     padding: 5px 30px 5px 12px;
     box-shadow: none;
-    background: url(../assets/images/cal_search_ic.png) no-repeat #fff;
+    background: url(./assets/images/cal_search_ic.png) no-repeat #fff;
     background-position: 96%;
     background-size: 32px;
     cursor: pointer;
@@ -5626,7 +5626,7 @@ ul.social_media_ic li i {
     font-size: 30px !important;
 }
 .sch_sec.col-md-6 input{
-background: url(../assets/images/cal_search_ic.png) no-repeat #fff;
+background: url(./assets/images/cal_search_ic.png) no-repeat #fff;
 background-size: 32px;
 background-position: 97% 5px;
 }
@@ -5840,7 +5840,7 @@ body.rtl .hf_inner h1 {
     text-align: right;
 }
 body.rtl .hf_inner select {
-    background: url(../assets/img/category-widget/caret_ic.png) no-repeat 10px 50% #fff !important;
+    background: url(./assets/images/category-widget/caret_ic.png) no-repeat 10px 50% #fff !important;
     direction: rtl;
 }
 body.rtl .language_field select {
@@ -6250,7 +6250,7 @@ body.rtl .sch_sec.col-md-6 input, body.rtl .sch_sec.col-md-6 select {
     background-position: 10px 62%;
 }
 body.rtl .sch_sec.col-md-6 input{
-background: url(../assets/images/cal_search_ic.png) no-repeat #fff;
+background: url(./assets/images/cal_search_ic.png) no-repeat #fff;
 background-size: 32px;
 background-position: 5px;
 }

@@ -124,8 +124,7 @@ class Bucket extends Component {
               <div className='sec_event_carousel'>
                 {ads &&
                   ads.map((bucketData, i) => (
-                    <>
-                      <div className="bucket_carousel">
+                      <div className="bucket_carousel" key={i}>
                         <div key={i} className='events_main_heading'>
                           <h1>{bucketData.name}</h1>
                           {/* <a href="javascript:void(0)" onClick={(e) => this.eventList(e,bucketData.id,bucketData.data[0].bucket,'bucket')}>See All</a> */}
@@ -292,7 +291,6 @@ class Bucket extends Component {
                           ))}
                         </Carousel>
                       </div>
-                    </>
                   ))}
               </div>
             </div>

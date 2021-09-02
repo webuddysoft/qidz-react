@@ -3,6 +3,7 @@ import ModalService from './services/modal.service'
 import LoginModal from './LoginModal'
 import RegisterModal from './RegisterModal'
 import config from '../config'
+import {FaBars} from 'react-icons/fa'; 
 
 class LoginMobileSection extends Component {
   constructor (props) {
@@ -57,16 +58,16 @@ class LoginMobileSection extends Component {
 
     return (
       <>
-        <nav class='navbar navbar-default'>
-          <div class='navbar-header'>
+        <nav className='navbar navbar-default'>
+          <div className='navbar-header'>
             <button
               type='button'
-              class='navbar-toggle collapsed'
+              className='navbar-toggle collapsed'
               data-toggle='collapse'
               data-target='#navbar-main'
               aria-expanded='false'
             >
-              <i class='fa fa-bars' aria-hidden='true'></i>
+              <FaBars size="15px" />
             </button>
           </div>
           {this.state.showAlert == true && (
@@ -76,8 +77,8 @@ class LoginMobileSection extends Component {
               <div id='button'></div>
             </div>
           )}
-          <div class='collapse navbar-collapse' id='navbar-main'>
-            <ul class='nav navbar-nav'>
+          <div className='collapse navbar-collapse' id='navbar-main'>
+            <ul className='nav navbar-nav'>
               <li>
                 <a href={languageId == 'en' ? '/blog' : '/ar/blog'}>
                   {' '}
@@ -113,9 +114,9 @@ class LoginMobileSection extends Component {
                   </a>
                 </li>
               ) : (
-                <div class='dropdown user_menu'>
+                <div className='dropdown user_menu'>
                   <a
-                    class='dropdown-toggle'
+                    className='dropdown-toggle'
                     href={
                       languageId == 'en'
                         ? '/user-profile/'
@@ -128,9 +129,9 @@ class LoginMobileSection extends Component {
                   >
                     {localStorage.getItem('name')}
                   </a>
-                  <div class='dropdown-menu' aria-labelledby='dropdownMenu1'>
+                  <div className='dropdown-menu' aria-labelledby='dropdownMenu1'>
                     <a
-                      class='dropdown-item'
+                      className='dropdown-item'
                       href={
                         languageId == 'en'
                           ? '/user-profile/'
@@ -143,7 +144,7 @@ class LoginMobileSection extends Component {
                         : 'My Profile'}
                     </a>
                     <a
-                      class='dropdown-item'
+                      className='dropdown-item'
                       href={
                         languageId == 'en' ? '/my-booking/' : '/ar/my-booking/'
                       }
@@ -153,7 +154,7 @@ class LoginMobileSection extends Component {
                         ? staticLanguage.common.my_profile
                         : 'My Bookings'}
                     </a>
-                    <a class='dropdown-item' href onClick={() => this.Logout()}>
+                    <a className='dropdown-item' href onClick={() => this.Logout()}>
                       {' '}
                       {languageId === config.lang
                         ? staticLanguage.profile.logout_title
